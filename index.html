@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Machine</title>
+
+    <style>
+        #mainContainer {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        button {
+            border: none;
+            background-color: green;
+            font-size: 40px
+        }
+
+        button:hover {
+            background-color: cyan;
+        }
+
+        .descriptor {
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 5px;
+            font-size: 18px;
+            max-width: 100px;
+            max-height: 100px;
+            margin: 5px;
+            padding: 5px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .descriptor img {
+            position:relative;
+            max-width: 75px;
+            max-height: 75px;
+            left: 50%;
+            transform: translate(-50%)
+        }
+
+    </style>
+</head>
+<body>
+    <h2 id="info_container">Values</h2>
+    <div id="mainContainer">
+        <h1 id='score_head'>Score: </h1>
+        <canvas id='canvas'>Hello World</canvas>
+        <button onclick="press_button()">spin</button>
+    </div>
+    <script src='main.js'></script>
+</body>
+</html>
